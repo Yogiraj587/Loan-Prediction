@@ -11,7 +11,7 @@ origins = [
 
 @app.get("/")
 def home():
-    return {'text':'Loan Prediction'}
+    return {'text':'Loan Prediction using Logistic Regression'}
 
 @app.post("/predict")
 def predict(Employed: int, BankBalance:int, AnnualSalary: int):
